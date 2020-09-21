@@ -8,6 +8,7 @@ class paperball{
         }
         this.body = Matter.Bodies.circle(x, y, radius, options)
         this.radius=radius
+        this.image = loadImage("paper.png");
         World.add(world, this.body);
     }
     display(){
